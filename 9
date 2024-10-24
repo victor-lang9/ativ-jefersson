@@ -1,0 +1,34 @@
+programa {
+    funcao inicio() {
+        // Declaração das variáveis
+        cadeia letra
+        inteiro ano
+
+        // Verifica se uma letra é vogal ou consoante
+        escreva("Digite uma letra: ")
+        leia(letra)
+
+        se (letra == 'a' ou letra == 'e' ou letra == 'i' ou letra == 'o' ou letra == 'u' ou
+            letra == 'A' ou letra == 'E' ou letra == 'I' ou letra == 'O' ou letra == 'U') {
+            escreva("A letra '", letra, "' é uma vogal.")
+        } senao se (letra >= 'a' e letra <= 'z' ou letra >= 'A' e letra <= 'Z') {
+            escreva("A letra '", letra, "' é uma consoante.")
+        } senao {
+            escreva("Cadeia inválido! Por favor, digite uma letra.")
+        }
+
+        // Verifica se um ano é bissexto
+        escreva("\nDigite um ano (ou um ano negativo): ")
+        leia(ano)
+
+        se (ano <= 0) {
+            ano = 2024 // Considerando o ano atual como 2024
+        }
+
+        se (ano % 4 == 0 e ano % 100 != 0 ou ano % 400 == 0) {
+            escreva("O ano ", ano, " é bissexto.")
+        } senao {
+            escreva("O ano ", ano, " não é bissexto.")
+        }
+    }
+}

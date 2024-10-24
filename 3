@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    inteiro dias
+    real km, precoPorDia, precoPorKm, totalAPagar
+   
+    precoPorDia = 60.00
+    precoPorKm = 0.15
+
+    escreva("Digite a quantidade de dias que o carro foi alugado: ")
+    leia(dias)
+    escreva("Digite a quantidade de km percorridos: ")
+    leia(km)
+
+  
+    totalAPagar = (dias * precoPorDia) + (km * precoPorKm)
+
+    escreva("O total a pagar é: R$ ", totalAPagar, "\n")
+  }
+}
