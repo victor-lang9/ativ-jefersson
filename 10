@@ -1,0 +1,19 @@
+programa {
+    funcao inicio() {
+        // Declaração da variável
+        real velocidade
+        real multa
+
+        // Lê a velocidade do carro
+        escreva("Digite a velocidade do carro (em km/h): ")
+        leia(velocidade)
+
+        // Verifica se a velocidade ultrapassou o limite
+        se (velocidade > 80) {
+            multa = (velocidade - 80) * 7 // Calcula a multa
+            escreva("Você foi multado! O valor da multa é R$ ", multa)
+        } senao {
+            escreva("Você está dentro do limite de velocidade.")
+        }
+    }
+}

@@ -1,0 +1,55 @@
+programa {
+    funcao inicio() {
+  
+        inteiro codigo, quantidade
+        real preco, total
+
+        
+        escreva("Cardápio:\n")
+        escreva("100 - Cachorro quente - R$ 5.00\n")
+        escreva("101 - Bauru - R$ 2.60\n")
+        escreva("102 - Bauru c/ ovo - R$ 3.80\n")
+        escreva("103 - Hamburger - R$ 9.00\n")
+        escreva("104 - Cheeseburger - R$ 11.00\n")
+        escreva("105 - Refrigerante - R$ 3.00\n")
+        escreva("106 - Semente dos Deuses - R$ 1000.00\n")
+
+     
+        escreva("Digite o código do item pedido: ")
+        leia(codigo)
+        escreva("Digite a quantidade: ")
+        leia(quantidade)
+
+       
+        preco = 0
+
+        
+        escolha (codigo) {
+            caso 100:
+                preco = 5.00
+            caso 101:
+                preco = 2.60
+            caso 102:
+                preco = 3.80
+            caso 103:
+                preco = 9.00
+            caso 104:
+                preco = 11.00
+            caso 105:
+                preco = 3.00
+            caso 106:
+                preco = 1000.00
+            caso contrario:
+                escreva("Código inválido!")
+                pare
+        }
+
+      
+        se (preco > 0) {
+         
+            total = preco * quantidade
+     
+            escreva("O total a ser pago é R$ ", total)
+        }
+    }
+}
